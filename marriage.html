@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Minor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+     
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    
+    footer {
+      background-color: black;
+      padding: 25px;
+    }
+      .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  </style>
+    
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-firestore.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAQJhT57qPBRvc1OU9EcWfpo4ywx8BD4Bc",
+    authDomain: "law-analytics-2f510.firebaseapp.com",
+    databaseURL: "https://law-analytics-2f510.firebaseio.com",
+    projectId: "law-analytics-2f510",
+    storageBucket: "law-analytics-2f510.appspot.com",
+    messagingSenderId: "1001118047943"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<body>
+    
+<nav class="navbar-default" style="background-color: cornflowerblue">
+    <div class="container-fluid">
+    <div class="navbar-brand" style="margin: 12px"><p id="demo" style="font-family: sans-serif;align-self: flex-end"></p>
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script></div>
+    </div></nav>
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">Minor Project</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="Minor.html">Home</a></li>
+        <li><a href="cases.html">Cases</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="login.html">Register</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="loginn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container"  style="height: 20%;width: 100%">
+ 
+  <script>
+    var paracontent = Document.getElementById("marriage_p1");
+      var fireparacontent = firebase.database().ref().child("paracontent");
+      fireparacontent.on('value',function(datasnapshot){
+                         paracontent.innerText = datasnapshot.val();
+                         });
+    </script>
+  
+<div class="jumborton" style="text-align: center"><h1><b>Marriage Cases</b></h1><br><p id="marriage_p1">We provide you the probability to win a case after applying the acts that our website suggests through its previous knowledge in that field.Also, we provide you with the past cases and which acts were applied in those cases and what was the result.</p><br><p>Our website also help public in general to get aware of all the acts and rules of <b>Indian Government</b>,so it can help them at times where government official loot them by stating false acts.</p><br>
+    
+   
+      <div class="col-sm-12 well" style="background-color: white;border-style: hidden;text-align: left">
+      
+       <b>1.Hindu Marriage Act :-</b><br><p>THE HINDU MARRIAGE ACT, 1955 
+(Act 25 of 1955)[18th May, 1955] An Act to amend and codify the law relating to marriage among Hindus. Preliminary 
+1. Short title and extent.-<br>(1) This Act may be called the Hindu Marriage Act, 1955. 
+<br>(2) It extends to the whole of India except the State of Jammu and Kashmir, and applies also to Hindus domiciled in the territories to which this Act extends who are outside the said territories. 2. Application of Act.- <br>(1) This Act applies,- 
+<br>(a) to any person who is a Hindu by religion in any of of its forms or developments, including a Virashaiva, a Lingayat or a follower of the Brahmo, Prarthana or Arya Samaj;<br> (b) to any person who is a Buddhist, Jaina or Sikh by religion, and 
+<br>(c) to any other person domiciled in the territories to which this Act extends who is not a Muslim, Christian, Parsi or Jew by religion, unless it is proved that any such person would not have been governed by the Hindu law or by any custom or usage as part of that law in respect of any of the matters dealt with herein if this Act had not been passed. 
+<br>Explanation.- The following persons are Hindus, Buddhists, Jainas or Sikhs by religion, as the case may be,- 
+<br>(a) any child, legitimate or illegitimate, both of whose parents are Hindus, Buddhists, Jainas or Sikhs by religion; 
+<br>(b) any child, legitimate or illegitimate, one of whose parents is a Hindu, Buddhist Jaina or Sikh by religion and who is brought up as a member of tribe, community, group or family to which such parents belongs or belonged; and 
+<br>(c) any person who is a convert or re-convert to the Hindus, Buddhist, Jaina or Sikh religion. 
+<br>(2) Notwithstanding anything contained in sub-section (1),nothing contained in this Act shall apply to the members of any Scheduled Tribe within the meaning of clause (25) of Article 366 of the Constitution unless the Central Government, by notification in the Official Gazette, otherwise directs. 
+<br>(3) The expression "Hindus" in any portion of this Act shall be construed as if it included a person who, though not a Hindu by religion is, nevertheless, a person 
+whom this Act applies by virtue of the provisions contained in this section. 3. Definitions.- In this Act, unless the context otherwise requires,- 
+<br>(a) the expression "custom" and "usage" signify any rule which, having been continuously and uniformally observed for a long time, has obtained the force of law among Hindus in any local area, tribe, community, group or family: 
+Provided that the rule is certain and not unreasonable or opposed to public policy; and 
+Provided further that in the case of a rule applicable only to a family it has not been discontinued by the family; 
+<br>(b)"District Court" means, in any area for which there is a City Civil Court, that Court, and in any other area the principal Civil Court of original jurisdiction, and includes any other civil court which may be specified by the State Government, by notification in the Official Gazette, as having jurisdiction in respect of matters dealt with in this Act; 
+<br>(c)"full blood"and "half blood"- two persons are said to be related to each other by full blood when they are descended from a common ancestor by the same wife and by half blood when they are descended from a common ancestor but by different wives; </p><a href="https://drive.google.com/file/d/1zWskrQiRZ4cKIzTPnXz-E8jr5ectLWt_/view?usp=sharing" style="color: black"><b>Read More...</b></a><br><br>
+        </div>
+    <div class="container-fluid" style="background-color: white;border-style: hidden;text-align: left"><br><br>
+     <b>2.Muslim Marriage Act :-</b><br><p>Preliminary- nikah in pre Islamic Arabia, meant different forms of sex relationship between a man and a
+woman established on certain terms, in pre Islamic days, women were treated as chattels, and were not
+given any right of inheritance and were absolutely dependent. it was prophet mohammad who brought
+about a complete change in the position of women.<br>
+Definition- The legal contract between a bride and bridegroom as part of an Islamic marriage; the
+contract of Islamic marriage; Islamic marriage in general.<br>
+Nikah is an Arabic term used for marriage. It means &quot;contract&quot;. The Quran specifically refers to marriage
+as &quot;mithaqun Ghalithun,&quot;. Which means &quot;a strong agreement&quot;.<br>
+The original meaning of the work nikah is the physical relationship between man and woman. It is also
+used secondarily to refer to the contract of marriage which makes that relationship lawful.
+&quot;A contract that results in the man and woman living with each other and supporting each other within the
+limits of what has been laid down for them in terms of rights and obligations.&quot;<br>
+Ibn Uthaimeen takes an even more comprehensive view of the institution of marriage in his
+definition of it as:<br>
+&quot;It is a mutual contract between a man and a woman whose goal is for each to enjoy the other, become a
+pious family and a sound society.”<br>
+
+Essential Condition of Nikah
+Nikah is based on few conditions. When these conditions are fulfilled, then a man and a woman are
+proclaimed as husband and wife and can live together and carry on their marital duties. These are:<br>
+    </p><a href="https://drive.google.com/file/d/1OkDdxew_r4TbBWfK7FQFT3pJPFvL74hR/view?usp=sharing" style="color: black"><b>Read More...</b></a>
+    </div>
+     <div class="container-fluid" style="background-color: white;border-style: hidden;text-align: left"><br><br>
+     <b>3.Dissolution Of Muslim Marraige :-</b><br><p>An Act to consolidate and clarify the provisions of Muslim law relating to suits for dissolution of
+marriage by women married under Muslim law and to remove doubts as to the effect of the
+renunciation of Islam by a married Muslim woman on her marriage tie.<br>
+Whereas it is expedient to consolidate and clarify the provisions of Muslim law relating to suit for
+dissolution of marriage by women married under Muslim law and to remove doubts as to the
+effect of the renunciation of Islam by a married Muslim woman on her marriage tie; It is hereby
+enacted as follows:<br>
+1. Short title and extent. ? (1) This Act may be called the Dissolution of Muslim Marriages Act,
+1939.<br>
+(2) It extends to the whole of India i
+<br>
+[1] [except the State of Jammu and Kashmir].
+<br>
+2. Grounds for decree for dissolution of marriage. ? A woman married under Muslim law shall
+be entitled to obtain a decree for the dissolution of her marriage on any one or more of the
+following grounds, namely:<br><br>
+(i)that the whereabouts of the husband have not been known for a period of four years;<br>
+(ii)that the husband has neglected or has failed to provide for her maintenance for a period of
+two years;<br>
+(iii)that the husband has been sentenced to imprisonment for a period of seven years or
+upwards;
+    </p><a href="https://drive.google.com/file/d/1pXOoEAbpaWtWvueFajAQA2J3tca9sdM0/view?usp=sharing" style="color: black"><b>Read More...</b></a>
+    </div>
+   <br><br><br>
+   
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>    
+<div class="container-fluid" style="background-color:#0D0D0E">
+    <div clas="row">
+   <div class="col-sm-3" style="text-align: center"><h4 style="color: cadetblue"><b>Our Contact</b></h4><a href="location.html"><p style="color: white">A-10,sector-62</p></a><p style="color: white">Noida,UP</p><p style="color: white">Ph.no:7042094357</p><br></div><div class="col-sm-3" style="text-align: center"><h4 style="color: cadetblue"><b>Quick Links</b></h4><a href="Hdivorce.html" style="color: white">Hindu Divorce Cases</a><br><a href="rapecases.html" style="color: white">Rape Cases</a><br><a href="Mdivorce.html" style="color: white">Muslim Divorce Cases</a><br></div>
+    <div class="col-sm-3" style="text-align: center"><h4 style="color: cadetblue"><b>Latest Posts</b></h4><a href="https://drive.google.com/file/d/1x-O5ZyYJ78W0acE8JVjKxTbNnkDeyNLq/view?usp=sharing" style="color: white">Gnanasoundari Vs. Nallathambi</a><br><a href="https://drive.google.com/file/d/1zWskrQiRZ4cKIzTPnXz-E8jr5ectLWt_/view?usp=sharing" style="color: white">Hindu Marriage Act </a><br><a href="https://drive.google.com/file/d/1VYmB09pxoz3yWw41wzF9nilF_Bmj-Wbe/view?usp=sharing" style="color: white">Nirbhaya Rape Case</a><br></div>
+    <div class="col-sm-3" style="text-align: center"><h4 style="color: cadetblue"><b>Recent News</b></h4><a href="https://economictimes.indiatimes.com/news/politics-and-nation/uttar-pradesh-cabinet-renames-allahbad-to-prayagraj/articleshow/66234532.cms" style="color: white">Allahabad to Prayagraj</a><br><a href="https://economictimes.indiatimes.com/news/politics-and-nation/up-cabinet-approves-renaming-of-faizabad-as-ayodhya-allahabad-as-prayagraj/articleshow/66604547.cms" style="color: white">Faizabad as Ayodhya</a><br><a href="https://economictimes.indiatimes.com/news/economy/indicators/indias-gdp-grows-at-8-2-per-cent-in-2018-19-q1/articleshow/65623967.cms" style="color: white">GDP grows at 8.2%</a><br></div>
+    </div>
+   </div>
+
+<footer class="container-fluid text-center" style="color: white">
+    <p>2018 Copyright:<a href=#coming>coming soon</a></p>
+</footer>
+
+</body>
+</html>
